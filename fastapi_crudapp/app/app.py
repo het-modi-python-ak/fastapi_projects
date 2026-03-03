@@ -34,7 +34,7 @@ def insert_user(blog: Blogdb):
         cursor.execute(insert_qu, values)
         mydb.commit()
     except mysql.connector.Error as err:
-        
+        mydb.rollback()
         if err.errno == 1062:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST, 
@@ -80,6 +80,7 @@ def update_user(blog_id: int, blog: Blogdb):
     cursor.execute(update_qu, values)
     mydb.commit()
     if cursor.rowcount == 0:
+        mydb.rollback()
         raise HTTPException(status_code=404, detail="blog not found")
     return {"message": f"blog with id {blog.blog_id} updated successfully"}
 
@@ -91,5 +92,6 @@ def delete_user(blog_id: int):
     cursor.execute(delete_qu, (blog_id,))
     mydb.commit()
     if cursor.rowcount == 0:
+        mydb.rollback()
         raise HTTPException(status_code=404, detail="blog not found")
     return {"message": f"blog with id {blog_id} deleted successfully"}
