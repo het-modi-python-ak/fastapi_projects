@@ -1,0 +1,7 @@
+2026-03-06 18:06:00,233 [app.app] INFO: GET /docs 200 0.001s
+2026-03-06 18:06:00,386 [app.app] INFO: GET /openapi.json 200 0.009s
+2026-03-06 18:06:04,365 [app.app] INFO: GET /blogs 200 0.006s
+2026-03-06 18:06:31,316 [app.app] INFO: GET /blogs 200 0.001s
+2026-03-06 18:06:34,740 [app.app] INFO: GET /docs 200 0.001s
+2026-03-06 18:06:34,858 [app.app] INFO: GET /openapi.json 200 0.000s
+2026-03-06 18:07:00,150 [app.app] INFO: GET /blogs/90 404 0.001s
