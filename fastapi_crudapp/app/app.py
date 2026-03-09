@@ -1,11 +1,13 @@
-from fastapi import FastAPI, HTTPException, status, Request
+from fastapi import FastAPI, HTTPException, status, Request,Query,APIRouter
 from database.queries import select_query,post_query,select_by_id,update_query,delete_query
 from app.schemas import  Blogdb
 from database.db import cursor,mydb
-from  mysql.connector import errorcode
 import logging
 import time
 import mysql.connector
+from middleware.logging import log_requests as lg
+
+
 
 # middleware
 
@@ -21,6 +23,10 @@ app = FastAPI(title="Example API")
 
 app = FastAPI()
 
+
+
+
+
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start_time = time.perf_counter()
@@ -32,49 +38,39 @@ async def log_requests(request: Request, call_next):
 
 
 
+#get
 
 
-
-
-
-
-
-
-def db_operation(query, params=None, fetch_results=False):
-    """
-    Executes a database query and handles common MySQL errors.
-    """
+@app.get("/blogpg", status_code=status.HTTP_200_OK)
+def select_blogs(
+    limit: int = Query(default=10, ge=1, le=100), 
+    offset: int = Query(default=0, ge=0)
+):
     try:
-        if params:
-            cursor.execute(query, params)
-        else:
-            cursor.execute(query)
+        # Use dictionary=True so results are returned as [{'id': 1, 'title': '...'}, ...]
+        cursor = mydb.cursor(dictionary=True)
         
-        if fetch_results:
-            return cursor.fetchall()
         
-        mydb.commit() # Commit changes for POST/PUT/DELETE
-        return {"message": "Operation successful"}
-
+        query = "SELECT * FROM Blogs ORDER BY blog_id ASC LIMIT %s OFFSET %s"
+        cursor.execute(query, (limit, offset))
+        
+        results = cursor.fetchall()
+        
+        return {
+            "data": results,
+            "metadata": {
+                "limit": limit,
+                "offset": offset,
+                "count": len(results)
+            }
+        }
     except mysql.connector.Error as err:
-        # Handle specific MySQL errors
-        if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Database access denied: Check credentials.")
-        elif err.errno == errorcode.ER_BAD_DB_ERROR:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Database does not exist.")
-        elif err.errno == errorcode.ER_NO_SUCH_TABLE:
-            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Table not found.")
-        elif err.errno == errorcode.ER_DUP_ENTRY:
-             # Handle duplicate entry 
-            raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Duplicate entry detected.")
-        else:
-            # General database error
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"Database error: {err}")
-    
-    except Exception as e:
-        # Catch any other unexpected exceptions
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"An unexpected error occurred: {e}")
-
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
+            detail=f"Database error: {err}"
+        )
+    finally:
+        cursor.close()
 
 
 
@@ -82,20 +78,56 @@ def db_operation(query, params=None, fetch_results=False):
 
 @app.get("/blogs", status_code=status.HTTP_200_OK)
 def select_users():
-    select_quer = select_query
+    
     try:
       
-        cursor.execute(select_quer)
+        cursor.execute(select_query)
         results = cursor.fetchall()
         return results
     except mysql.connector.Error as err:
+        raise HTTPException(status_code=500, detail=f"Database connection error: {err}")
+
+
+
+@app.get("/blogs/{blog_id}", status_code=status.HTTP_200_OK)
+def get_user_by_id(blog_id: int):
+    
+    cursor.execute(select_by_id, (blog_id,))
+    result = cursor.fetchone()
+    if result:
+        return result
+    else:
+        raise HTTPException(status_code=404, detail="blog not found")
+    
+
+
+
+#search by author
+@app.get("/get_by_author", status_code=status.HTTP_200_OK) # 1. Changed to 200 OK (201 is for creating)
+def get_by_auth(author: str = None):
+    try:
+     
+        search_term = f"%{author}"
+        
+        # 3. Ensure the SQL string and parameters are correctly formatted
+        
+        cursor.execute("SELECT * FROM Blogs WHERE author LIKE %s", (search_term,))
+        
+        result = cursor.fetchall()
+        
+        if result:
+            return result
+        else:
+            # 4. Strings must be in quotes
+            raise HTTPException(status_code=404, detail="No author found")
+            
+    except mysql.connector.Error as err:
         raise HTTPException(status_code=500, detail=f"Database error: {err}")
 
-from fastapi import HTTPException, status
-import mysql.connector
 
 
 
+#post
 
 @app.post("/blogs", status_code=status.HTTP_201_CREATED)
 def insert_user(blog: Blogdb):
@@ -126,17 +158,6 @@ def insert_user(blog: Blogdb):
 
 
 
-@app.get("/blogs/{blog_id}", status_code=status.HTTP_200_OK)
-def get_user_by_id(blog_id: int):
-    
-    cursor.execute(select_by_id, (blog_id,))
-    result = cursor.fetchone()
-    if result:
-        return result
-    else:
-        raise HTTPException(status_code=404, detail="blog not found")
-    
-
 
 
 
@@ -156,6 +177,14 @@ def update_user(blog_id: int, blog: Blogdb):
     return {"message": f"blog with id {blog.blog_id} updated successfully"}
 
 
+
+
+
+
+
+
+
+#delet
 
 @app.delete("/blogs/{blog_id}", status_code=status.HTTP_200_OK)
 def delete_blog(blog_id: int):
