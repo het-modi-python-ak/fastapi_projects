@@ -9,8 +9,7 @@ def init_db():
     conn.execute("""
         CREATE TABLE IF NOT EXISTS users1 (
             username TEXT PRIMARY KEY,
-            hashed_password TEXT NOT NULL,
-            
+            hashed_password TEXT NOT NULL 
         ); 
     """) 
     conn.commit()

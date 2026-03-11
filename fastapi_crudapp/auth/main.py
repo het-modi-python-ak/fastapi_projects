@@ -9,6 +9,8 @@ from passlib.context import CryptContext
 from database import init_db, get_user, create_user 
 from dotenv import load_dotenv
 import os
+from middleware.logging import LoggingMiddleware
+
 
 load_dotenv()
 
@@ -17,10 +19,15 @@ load_dotenv()
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60
+ACCESS_TOKEN_EXPIRE_MINUTES = 1
+REFRESH_TOKEN_EXPIRE_DAYS  = 7
+
+
 
 app = FastAPI()
 
+
+app.add_middleware(LoggingMiddleware)
 
 @app.on_event("startup")
 def on_startup():
@@ -39,7 +46,9 @@ class UserPublic(BaseModel):
 
 class Token(BaseModel):
     access_token: str
+    refresh_token:str   #added refresh token
     token_type: str = "bearer"
+
 
 def hash_password(password: str) -> str:
     return pwd_context.hash(password)
@@ -52,6 +61,19 @@ def create_access_toke(data: dict, expires_minutes: int = ACCESS_TOKEN_EXPIRE_MI
     expire = datetime.now(timezone.utc) + timedelta(minutes=expires_minutes)
     to_encode.update({"exp": expire})
     return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+
+
+#refresh token
+
+def create_refresh_token(data:dict):
+    to_encode = data.copy()
+    expire = datetime.now(timezone.utc)+timedelta(days=REFRESH_TOKEN_EXPIRE_DAYS)
+    to_encode.update({"exp":expire,"type":"refresh"})
+    return jwt.encode(to_encode,SECRET_KEY,algorithm=ALGORITHM)
+
+
+
+
 
 def authenticate_user(username: str, password: str) -> Optional[dict]:
     user = get_user(username)
@@ -100,7 +122,31 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
         raise HTTPException(status_code=401, detail="Invalid credentials")
 
     access_token = create_access_toke({"sub": user["username"]})
-    return {"access_token": access_token, "token_type": "bearer"}
+    refresh_token = create_refresh_token({"sub":user["username"]})
+    return {"access_token": access_token,"refresh_token":refresh_token, "token_type": "bearer"}
+
+
+
+
+#refresh endpoint
+
+@app.post("/refresh")
+def refresh_token(refresh_token:str):
+    cred_excep = HTTPException(status_code=401,detail="Invalid refresh token")
+
+    try :
+        payload = jwt.decode(refresh_token,SECRET_KEY,algorithms=[ALGORITHM])
+        if payload.get("type")!= "refresh":
+            raise cred_excep
+        username = payload.get("sub")
+        if username is None:
+            raise cred_excep
+    except JWTError:
+        raise cred_excep
+    
+    new_access_token = create_access_toke({"sub":username})
+    return { "acess_token":new_access_token,"token_type":"bearer"}
+
 
 
 
