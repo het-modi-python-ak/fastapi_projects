@@ -1,5 +1,0 @@
-select_query = "SELECT blog_id, title, author, content FROM Blogs"
-post_query ="INSERT INTO Blogs (blog_id, title, author, content) VALUES (%s, %s, %s, %s)"
-select_by_id = "SELECT * FROM Blogs WHERE blog_id = %s"
-update_query="   UPDATE Blogs SET title = %s, author = %s, content = %s WHERE blog_id = %s"
-delete_query=  "DELETE FROM Blogs WHERE blog_id = %s"
