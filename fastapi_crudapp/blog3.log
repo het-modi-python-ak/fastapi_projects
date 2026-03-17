@@ -1,0 +1,510 @@
+2026-03-17 13:45:14,478 | INFO | REQUEST | 127.0.0.1 | GET /docs | Query: {} | Payload: None
+2026-03-17 13:45:14,480 | INFO | RESPONSE | GET /docs | Status: 200 | Time: 0.0024s
+2026-03-17 13:45:14,675 | INFO | REQUEST | 127.0.0.1 | GET /openapi.json | Query: {} | Payload: None
+2026-03-17 13:45:14,707 | INFO | RESPONSE | GET /openapi.json | Status: 200 | Time: 0.0318s
+2026-03-17 13:45:31,492 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 13:45:31,509 | INFO | RESPONSE | GET /blog | Status: 200 | Time: 0.0177s
+2026-03-17 13:45:39,862 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 13:45:39,863 | INFO | RESPONSE | GET /blog | Status: 500 | Time: 0.0007s
+2026-03-17 13:45:40,265 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 13:45:40,266 | INFO | RESPONSE | GET /blog | Status: 500 | Time: 0.0008s
+2026-03-17 13:45:45,456 | INFO | REQUEST | 127.0.0.1 | GET /docs | Query: {} | Payload: None
+2026-03-17 13:45:45,458 | INFO | RESPONSE | GET /docs | Status: 200 | Time: 0.0013s
+2026-03-17 13:45:45,601 | INFO | REQUEST | 127.0.0.1 | GET /openapi.json | Query: {} | Payload: None
+2026-03-17 13:45:45,604 | INFO | RESPONSE | GET /openapi.json | Status: 200 | Time: 0.0030s
+2026-03-17 13:45:48,191 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 13:45:48,191 | INFO | RESPONSE | GET /blog | Status: 500 | Time: 0.0008s
+2026-03-17 13:46:12,841 | INFO | REQUEST | 127.0.0.1 | GET /docs | Query: {} | Payload: None
+2026-03-17 13:46:12,841 | INFO | RESPONSE | GET /docs | Status: 200 | Time: 0.0010s
+2026-03-17 13:46:12,935 | INFO | REQUEST | 127.0.0.1 | GET /openapi.json | Query: {} | Payload: None
+2026-03-17 13:46:12,935 | INFO | RESPONSE | GET /openapi.json | Status: 200 | Time: 0.0005s
+2026-03-17 13:46:16,265 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 13:46:16,266 | INFO | RESPONSE | GET /blog | Status: 500 | Time: 0.0010s
+2026-03-17 13:47:21,652 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 13:47:21,653 | INFO | RESPONSE | GET /blog | Status: 500 | Time: 0.0008s
+2026-03-17 13:47:38,212 | INFO | REQUEST | 127.0.0.1 | GET /docs | Query: {} | Payload: None
+2026-03-17 13:47:38,215 | INFO | RESPONSE | GET /docs | Status: 200 | Time: 0.0029s
+2026-03-17 13:47:38,320 | INFO | REQUEST | 127.0.0.1 | GET /openapi.json | Query: {} | Payload: None
+2026-03-17 13:47:38,358 | INFO | RESPONSE | GET /openapi.json | Status: 200 | Time: 0.0379s
+2026-03-17 13:47:41,618 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 13:47:41,623 | INFO | RESPONSE | GET /blog | Status: 200 | Time: 0.0053s
+2026-03-17 13:47:43,959 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 13:47:43,960 | INFO | RESPONSE | GET /blog | Status: 500 | Time: 0.0008s
+2026-03-17 13:48:26,976 | INFO | REQUEST | 127.0.0.1 | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 13:59:24,845 | INFO | REQUEST | 127.0.0.1 | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 13:59:51,556 | INFO | REQUEST | 127.0.0.1 | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 14:01:13,506 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 14:01:13,507 | INFO | RESPONSE | GET /blog | Status: 404 | Time: 0.0005s
+2026-03-17 14:01:34,612 | INFO | REQUEST | 127.0.0.1 | GET /docs | Query: {} | Payload: None
+2026-03-17 14:01:34,612 | INFO | RESPONSE | GET /docs | Status: 200 | Time: 0.0004s
+2026-03-17 14:01:34,716 | INFO | REQUEST | 127.0.0.1 | GET /openapi.json | Query: {} | Payload: None
+2026-03-17 14:01:34,748 | INFO | RESPONSE | GET /openapi.json | Status: 200 | Time: 0.0318s
+2026-03-17 14:01:38,532 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 14:01:38,541 | INFO | RESPONSE | GET /blog | Status: 200 | Time: 0.0088s
+2026-03-17 14:01:46,882 | INFO | REQUEST | 127.0.0.1 | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 14:01:46,884 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0024s
+2026-03-17 14:01:50,447 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 14:01:50,449 | INFO | RESPONSE | GET /blog | Status: 200 | Time: 0.0018s
+2026-03-17 14:01:52,245 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 14:01:52,247 | INFO | RESPONSE | GET /blog | Status: 200 | Time: 0.0015s
+2026-03-17 14:01:52,628 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 14:01:52,629 | INFO | RESPONSE | GET /blog | Status: 200 | Time: 0.0014s
+2026-03-17 14:01:52,896 | INFO | REQUEST | 127.0.0.1 | GET /blog | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 14:01:52,897 | INFO | RESPONSE | GET /blog | Status: 200 | Time: 0.0017s
+2026-03-17 15:25:15,111 | INFO | REQUEST | 127.0.0.1 | GET /docs | Query: {} | Payload: None
+2026-03-17 15:25:15,112 | INFO | RESPONSE | GET /docs | Status: 200 | Time: 0.0008s
+2026-03-17 15:25:15,265 | INFO | REQUEST | 127.0.0.1 | GET /openapi.json | Query: {} | Payload: None
+2026-03-17 15:25:15,297 | INFO | RESPONSE | GET /openapi.json | Status: 200 | Time: 0.0322s
+2026-03-17 15:25:32,516 | INFO | REQUEST | 127.0.0.1 | GET /blogs | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 15:25:32,522 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0059s
+2026-03-17 15:28:11,787 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:28:11,791 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0048s
+2026-03-17 15:28:11,793 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:32:05,314 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:32:05,318 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 15:32:05,319 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:32:58,151 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:32:58,160 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0093s
+2026-03-17 15:32:58,161 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:35:08,871 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:35:08,876 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0055s
+2026-03-17 15:35:08,878 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:35:08,880 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:35:08,882 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0017s
+2026-03-17 15:35:08,883 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:35:37,496 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:35:37,501 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0047s
+2026-03-17 15:35:37,502 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:35:37,504 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:35:37,506 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0020s
+2026-03-17 15:35:37,509 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:35:51,016 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:35:51,020 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 15:35:51,021 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:35:51,023 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:35:51,025 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0022s
+2026-03-17 15:35:51,028 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:36:05,067 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:36:05,071 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0045s
+2026-03-17 15:36:05,072 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:36:05,074 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:36:05,076 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0020s
+2026-03-17 15:36:05,078 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:37:07,220 | INFO | REQUEST | 127.0.0.1 | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:37:07,228 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0082s
+2026-03-17 15:37:28,890 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:37:28,895 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0044s
+2026-03-17 15:37:28,896 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:37:28,898 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:37:28,899 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 15:37:28,900 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:37:47,985 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:37:47,989 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0043s
+2026-03-17 15:37:47,991 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:37:47,994 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:37:47,996 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0025s
+2026-03-17 15:37:47,998 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:39:23,501 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:39:23,505 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0045s
+2026-03-17 15:39:23,506 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:39:23,508 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:39:23,510 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0022s
+2026-03-17 15:39:23,513 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:39:43,763 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:39:43,767 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0044s
+2026-03-17 15:39:43,768 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:39:43,770 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:39:43,772 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0019s
+2026-03-17 15:39:43,775 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:40:13,187 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:40:13,191 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0041s
+2026-03-17 15:40:13,192 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:40:13,195 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:40:13,196 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0016s
+2026-03-17 15:40:13,197 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:40:42,488 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:40:42,492 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 15:40:42,493 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:40:42,496 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:40:42,498 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0029s
+2026-03-17 15:40:42,500 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:41:10,990 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 15:41:10,995 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0044s
+2026-03-17 15:41:10,996 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 15:41:10,998 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 15:41:11,000 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 15:41:11,001 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 15:45:14,116 | INFO | REQUEST | 127.0.0.1 | GET /blogs | Query: {'limit': '10', 'offset': '0'} | Payload: None
+2026-03-17 15:45:14,123 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0066s
+2026-03-17 16:04:41,396 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:04:41,401 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0047s
+2026-03-17 16:04:41,402 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:04:41,404 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:04:41,406 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0019s
+2026-03-17 16:04:41,408 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:10:04,997 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:10:05,001 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0043s
+2026-03-17 16:10:05,002 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:10:05,004 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:10:05,006 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0019s
+2026-03-17 16:10:05,007 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:11:35,790 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:11:35,794 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0045s
+2026-03-17 16:11:35,795 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:11:35,797 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:11:35,799 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 16:11:35,800 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:11:35,807 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:11:35,808 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0013s
+2026-03-17 16:11:35,809 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:11:56,183 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:11:56,187 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 16:11:56,188 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:11:56,191 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:11:56,192 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0018s
+2026-03-17 16:11:56,194 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:11:56,203 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:11:56,204 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0017s
+2026-03-17 16:11:56,205 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:17:49,535 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:17:49,540 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0045s
+2026-03-17 16:17:49,541 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:17:49,543 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:17:49,544 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 16:17:49,545 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:17:49,553 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:17:49,554 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0014s
+2026-03-17 16:17:49,555 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:19:16,608 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:19:16,612 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 16:19:16,613 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:19:16,615 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:19:16,617 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 16:19:16,618 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:19:16,628 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:19:16,629 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0014s
+2026-03-17 16:19:16,630 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:19:23,443 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:19:23,448 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0044s
+2026-03-17 16:19:23,449 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:19:23,451 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:19:23,453 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0020s
+2026-03-17 16:19:23,455 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:19:23,468 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:19:23,469 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0013s
+2026-03-17 16:19:23,470 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:29:35,363 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:29:35,368 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0049s
+2026-03-17 16:29:35,370 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:29:35,372 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:29:35,373 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:29:35,374 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:29:35,384 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:29:35,385 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0013s
+2026-03-17 16:29:35,386 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:30:17,475 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:30:17,480 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0045s
+2026-03-17 16:30:17,481 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:30:17,483 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:30:17,484 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 16:30:17,485 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:30:17,498 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:30:17,501 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0030s
+2026-03-17 16:30:17,503 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:34:53,772 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:34:53,776 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 16:34:53,777 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:34:53,780 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:34:53,781 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 16:34:53,782 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:34:53,791 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:34:53,792 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0014s
+2026-03-17 16:34:53,793 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:34:53,802 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:34:53,804 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0028s
+2026-03-17 16:34:53,805 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:35:15,061 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:35:15,065 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0047s
+2026-03-17 16:35:15,067 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:35:15,070 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:35:15,071 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0016s
+2026-03-17 16:35:15,074 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:35:15,084 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:35:15,086 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0016s
+2026-03-17 16:35:15,087 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:35:15,096 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:35:15,100 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0041s
+2026-03-17 16:35:15,101 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:35:41,767 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:35:41,771 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0044s
+2026-03-17 16:35:41,772 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:35:41,775 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:35:41,776 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 16:35:41,777 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:35:41,787 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:35:41,788 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0013s
+2026-03-17 16:35:41,789 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:35:41,792 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:35:41,794 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0017s
+2026-03-17 16:35:41,795 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:35:50,650 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:35:50,654 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0042s
+2026-03-17 16:35:50,655 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:35:50,657 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:35:50,659 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:35:50,659 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:35:50,671 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:35:50,674 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0032s
+2026-03-17 16:35:50,675 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:35:50,678 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:35:50,680 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0025s
+2026-03-17 16:35:50,683 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:36:09,012 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:36:09,017 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0045s
+2026-03-17 16:36:09,018 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:36:09,020 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:36:09,021 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:36:09,022 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:36:09,025 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:36:09,028 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0023s
+2026-03-17 16:36:09,032 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:36:09,037 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:36:09,040 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0037s
+2026-03-17 16:36:09,043 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:36:45,486 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:36:45,490 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0040s
+2026-03-17 16:36:45,491 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:36:45,493 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:36:45,495 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:36:45,495 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:36:45,506 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:36:45,507 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0014s
+2026-03-17 16:36:45,508 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:36:45,511 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:36:45,518 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0076s
+2026-03-17 16:36:45,521 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:37:07,738 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:37:07,742 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0041s
+2026-03-17 16:37:07,743 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:37:07,745 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:37:07,747 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 16:37:07,747 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:37:07,757 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:37:07,758 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0013s
+2026-03-17 16:37:07,759 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:37:07,762 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:37:07,771 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0094s
+2026-03-17 16:37:07,772 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:38:08,281 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:38:08,286 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0051s
+2026-03-17 16:38:08,288 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:38:08,291 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:38:08,292 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0017s
+2026-03-17 16:38:08,294 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:38:08,304 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:38:08,305 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0014s
+2026-03-17 16:38:08,306 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:38:08,313 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:38:08,318 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0046s
+2026-03-17 16:38:08,319 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:41:49,314 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:41:49,319 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0044s
+2026-03-17 16:41:49,320 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:41:49,324 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:41:49,325 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:41:49,326 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:41:49,336 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:41:49,337 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0015s
+2026-03-17 16:41:49,338 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:41:49,346 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:41:49,348 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0022s
+2026-03-17 16:41:49,349 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:42:29,263 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:42:29,268 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 16:42:29,269 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:42:29,272 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:42:29,273 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:42:29,275 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:42:29,288 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:42:29,300 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0122s
+2026-03-17 16:42:29,303 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:42:29,315 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:42:29,321 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0054s
+2026-03-17 16:42:29,323 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:43:15,748 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:43:15,752 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0042s
+2026-03-17 16:43:15,754 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:43:15,756 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:43:15,757 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:43:15,758 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:43:15,768 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:43:15,770 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0019s
+2026-03-17 16:43:15,770 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:43:15,776 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:43:15,779 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0038s
+2026-03-17 16:43:15,780 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:43:27,403 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:43:27,407 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 16:43:27,408 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:43:27,411 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:43:27,412 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:43:27,413 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:43:27,425 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:43:27,427 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0016s
+2026-03-17 16:43:27,428 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:43:27,431 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:43:27,433 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0021s
+2026-03-17 16:43:27,434 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:43:44,316 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:43:44,320 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 16:43:44,321 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:43:44,325 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:43:44,327 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0021s
+2026-03-17 16:43:44,330 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:43:44,337 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:43:44,340 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0022s
+2026-03-17 16:43:44,342 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:43:44,349 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:43:44,353 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0038s
+2026-03-17 16:43:44,354 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:43:54,447 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:43:54,451 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0047s
+2026-03-17 16:43:54,453 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:43:54,455 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:43:54,456 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0018s
+2026-03-17 16:43:54,457 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:43:54,465 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:43:54,466 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0017s
+2026-03-17 16:43:54,467 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:43:54,476 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:43:54,478 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0020s
+2026-03-17 16:43:54,479 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:44:10,283 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:44:10,287 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0045s
+2026-03-17 16:44:10,288 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:44:10,290 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:44:10,292 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:44:10,293 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:44:10,304 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:44:10,305 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0015s
+2026-03-17 16:44:10,306 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:44:10,313 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:44:10,316 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0027s
+2026-03-17 16:44:10,317 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:44:19,724 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:44:19,728 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 16:44:19,729 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:44:19,731 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:44:19,733 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:44:19,734 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:44:19,743 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:44:19,744 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0013s
+2026-03-17 16:44:19,745 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:44:19,748 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:44:19,755 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0072s
+2026-03-17 16:44:19,757 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:44:47,604 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:44:47,609 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0043s
+2026-03-17 16:44:47,610 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:44:47,613 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:44:47,614 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:44:47,615 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:44:47,626 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:44:47,628 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0013s
+2026-03-17 16:44:47,628 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:44:47,639 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:44:47,641 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0029s
+2026-03-17 16:44:47,642 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:45:18,067 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:45:18,072 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0042s
+2026-03-17 16:45:18,073 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:45:18,075 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:45:18,076 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0016s
+2026-03-17 16:45:18,077 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:45:18,084 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:45:18,088 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0043s
+2026-03-17 16:45:18,089 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:45:18,096 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:45:18,098 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0023s
+2026-03-17 16:45:18,099 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:45:30,402 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:45:30,407 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 16:45:30,408 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:45:30,410 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:45:30,412 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 16:45:30,412 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:45:30,422 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:45:30,424 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0021s
+2026-03-17 16:45:30,425 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:45:30,428 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:45:30,430 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0019s
+2026-03-17 16:45:30,431 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:46:49,309 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:46:49,313 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0043s
+2026-03-17 16:46:49,315 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:46:49,317 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:46:49,319 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0016s
+2026-03-17 16:46:49,320 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:46:49,328 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:46:49,329 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0014s
+2026-03-17 16:46:49,330 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:46:49,333 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:46:49,336 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0029s
+2026-03-17 16:46:49,337 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:46:58,953 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 16:46:58,958 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0045s
+2026-03-17 16:46:58,959 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 16:46:58,961 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:46:58,963 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0014s
+2026-03-17 16:46:58,963 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 16:46:58,974 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 16:46:58,976 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0021s
+2026-03-17 16:46:58,977 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 16:46:58,981 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 16:46:58,985 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0044s
+2026-03-17 16:46:58,989 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 17:11:35,806 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 17:11:35,811 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0056s
+2026-03-17 17:11:35,812 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 17:11:35,815 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 17:11:35,816 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0016s
+2026-03-17 17:11:35,819 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 17:11:35,827 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 17:11:35,829 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0021s
+2026-03-17 17:11:35,831 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 17:11:35,835 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 17:11:35,841 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0058s
+2026-03-17 17:11:35,845 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 17:11:35,850 | INFO | REQUEST | testclient | GET /blogs/999 | Query: {} | Payload: None
+2026-03-17 17:11:35,856 | INFO | RESPONSE | GET /blogs/999 | Status: 404 | Time: 0.0053s
+2026-03-17 17:11:35,859 | INFO | HTTP Request: GET http://testserver/blogs/999 "HTTP/1.1 404 Not Found"
+2026-03-17 17:11:50,719 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 17:11:50,727 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0084s
+2026-03-17 17:11:50,728 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 17:11:50,730 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 17:11:50,733 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0022s
+2026-03-17 17:11:50,734 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 17:11:50,740 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 17:11:50,744 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0043s
+2026-03-17 17:11:50,745 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 17:11:50,749 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 17:11:50,752 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0032s
+2026-03-17 17:11:50,756 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 17:25:59,300 | INFO | REQUEST | testclient | GET /blogs | Query: {'limit': '5', 'offset': '0'} | Payload: None
+2026-03-17 17:25:59,304 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0046s
+2026-03-17 17:25:59,305 | INFO | HTTP Request: GET http://testserver/blogs?limit=5&offset=0 "HTTP/1.1 200 OK"
+2026-03-17 17:25:59,307 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 17:25:59,309 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0015s
+2026-03-17 17:25:59,310 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 17:25:59,317 | INFO | REQUEST | testclient | GET /blogs | Query: {} | Payload: None
+2026-03-17 17:25:59,319 | INFO | RESPONSE | GET /blogs | Status: 200 | Time: 0.0023s
+2026-03-17 17:25:59,322 | INFO | HTTP Request: GET http://testserver/blogs "HTTP/1.1 200 OK"
+2026-03-17 17:25:59,327 | INFO | REQUEST | testclient | GET /blogs/1 | Query: {} | Payload: None
+2026-03-17 17:25:59,328 | INFO | RESPONSE | GET /blogs/1 | Status: 200 | Time: 0.0012s
+2026-03-17 17:25:59,329 | INFO | HTTP Request: GET http://testserver/blogs/1 "HTTP/1.1 200 OK"
+2026-03-17 17:25:59,338 | INFO | REQUEST | testclient | GET /blogs/999 | Query: {} | Payload: None
+2026-03-17 17:25:59,340 | INFO | RESPONSE | GET /blogs/999 | Status: 404 | Time: 0.0021s
+2026-03-17 17:25:59,342 | INFO | HTTP Request: GET http://testserver/blogs/999 "HTTP/1.1 404 Not Found"
+2026-03-17 17:25:59,346 | INFO | REQUEST | testclient | POST /blogs | Query: {} | Payload: {"blog_id": 1, "title": "Test", "author": "Me", "Content": "hello"}
+2026-03-17 17:25:59,354 | INFO | RESPONSE | POST /blogs | Status: 201 | Time: 0.0083s
+2026-03-17 17:25:59,357 | INFO | HTTP Request: POST http://testserver/blogs "HTTP/1.1 201 Created"
