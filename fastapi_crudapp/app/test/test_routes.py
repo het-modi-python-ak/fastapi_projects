@@ -1,9 +1,8 @@
 from fastapi.testclient import TestClient
-from app.app import app  # Explicitly import the FastAPI instance
-import pytest
-from database.db import cursor
-from database.db import mydb
+from app.app import app
 import mysql.connector
+import pytest
+
 
 client = TestClient(app)
 
@@ -13,73 +12,76 @@ def test_blog():
     assert response.status_code == 200
     assert "data" in response.json()
 
-
 def test_blog_by_id():
     response = client.get("/blogs/1")
-    assert response.status_code==200
-    assert response.json()==[1, "this is one", "max ", "des "]
+    assert response.status_code == 200
+    assert response.json() == [1, "this is one", "max ", "des "]
 
-
- #mocking db   
-
+# Mocking db
 @pytest.fixture
 def mock_db(mocker):
-    mock_cursor=mocker.patch("app.api.blogs.cursor")
-    mock_db=mocker.patch("app.api.blogs.mydb")
-    return mock_cursor,mock_db
+  
+    mock_cursor = mocker.patch("app.api.blogs.cursor")
+    mock_db_conn = mocker.patch("app.api.blogs.mydb")
+    return mock_cursor, mock_db_conn
 
-
-
-#get all blogs
+# Get all blogs
 def test_get_blogs(mock_db):
-    mock_cursor,_ = mock_db
-
-    mock_cursor.fetchall.return_value=[(1,'title1',"author1","contenet1")]
-    
+    mock_cursor, _ = mock_db
+    mock_cursor.fetchall.return_value = [(1,'title1',"author1","contenet1")]
     response = client.get("/blogs")
-    assert response.status_code==200
-    assert len(response.json()["data"])==1
+    assert response.status_code == 200
+    assert len(response.json()["data"]) == 1
+    # print(mock_cursor.fetchall.called) # You can remove this print statement
 
-    print(mock_cursor.fetchall.called)
-
-
-#get by id
-
+# Get by id
 def test_get_blogs_by_id(mock_db):
-    mock_cursor,_ = mock_db
-
-    mock_cursor.fetchone.return_value=[(1,'title1',"author1","contenet1")]
-    
+    mock_cursor, _ = mock_db
+    mock_cursor.fetchone.return_value = [(1,'title1',"author1","contenet1")]
     response = client.get("/blogs/1")
-    assert response.status_code==200
-    assert response.json()==[[1,'title1',"author1","contenet1"]]
+    assert response.status_code == 200
+    assert response.json() == [[1,'title1',"author1","contenet1"]]
 
-
-#blog not found 
-
+# Blog not found
 def test_blog_not_found(mock_db):
-    mock_cursor,_ = mock_db
-    mock_cursor.fetchone.return_value=None
+    mock_cursor, _ = mock_db
+    mock_cursor.fetchone.return_value = None
     response = client.get("/blogs/999")
-    assert response.status_code==404
+    assert response.status_code == 404
 
-
-
-#insert blog 
-
+# Insert blog
 def test_create_blog(mock_db):
-    mock_cursor,mock_db_conn=mock_db
+    mock_cursor, mock_db_conn = mock_db
     data = {
-        "blog_id":1,
-        "title":"Test",
-        "author":"Me",
-        "Content":"hello"
+        "blog_id": 1,
+        "title": "Test",
+        "author": "Me",
+        "Content": "hello"
     }
-
-    response = client.post("/blogs",json=data)
-    assert response.status_code==201
+    response = client.post("/blogs", json=data)
+    assert response.status_code == 201
     mock_db_conn.commit.assert_called_once()
 
+# Test for duplicate blog entry (handles the error scenario)
+def test_create_duplicate_blog(mock_db):
+    mock_cursor, mock_db_conn = mock_db
+    data = {
+        "blog_id": 1,
+        "title": "Duplicate Test",
+        "author": "Me",
+        "Content": "hello again"
+    }
 
-
-#duplicate blog
+    # Simulate the database raising an IntegrityError when commit() is called
+    # (Assuming your app catches this and returns a 409 Conflict)
+    # The error code ER_DUP_ENTRY is common for MySQL duplicate key errors.
+    mock_db_conn.commit.side_effect = mysql.connector.errors.IntegrityError(
+        msg="Duplicate entry '1' for key 'PRIMARY'",
+        errno=1062 # MySQL error code for ER_DUP_ENTRY
+    )
+    
+    response = client.post("/blogs", json=data)
+    
+    # Assert that the application returns a 409 Conflict status code
+    assert response.status_code == 409 
+    assert "already exists" in response.json().get("detail")

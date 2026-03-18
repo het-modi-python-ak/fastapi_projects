@@ -32,7 +32,7 @@ router = APIRouter(tags=["blogs"])
 #get
 
 
-@router.get("/blog", status_code=status.HTTP_200_OK)
+@router.get("/blogs", status_code=status.HTTP_200_OK)
 def select_blogs(
     limit: int = Query(default=10, ge=1), 
     offset: int = Query(default=0, ge=0)
@@ -58,8 +58,7 @@ def select_blogs(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
             detail=f"Database error: {err}"
         )
-    finally:
-        cursor.close()
+   
 
 
 
@@ -130,7 +129,7 @@ def insert_user(blog: Blogdb):
         mydb.rollback()
         if err.errno == 1062:
             raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST, 
+                status_code=status.HTTP_409_CONFLICT, 
                 detail=f"Blog with ID {blog.blog_id} already exists."
             )
         

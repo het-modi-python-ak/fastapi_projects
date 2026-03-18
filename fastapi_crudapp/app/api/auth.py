@@ -3,7 +3,7 @@ from typing import Optional
 from fastapi import FastAPI, Depends, HTTPException, status,APIRouter
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel, Field
-from jose import JWTError, jwt
+from jose import jwt,JWTError
 from passlib.context import CryptContext
 
 from auth.database import init_db, get_user, create_user 
