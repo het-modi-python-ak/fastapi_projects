@@ -62,7 +62,7 @@ def select_blogs(
 
 
 
-
+# fastapi_crudapp/app/api/blogs.py
 
 # @router.get("/blogs", status_code=status.HTTP_200_OK)
 # def select_users():
