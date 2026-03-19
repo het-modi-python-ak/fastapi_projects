@@ -6,8 +6,8 @@ import logging
 import time
 import mysql.connector
 from middleware.logging import LoggingMiddleware
-
-
+import redis
+import json
 # middleware
 
 
@@ -31,21 +31,36 @@ router = APIRouter(tags=["blogs"])
 
 #get
 
+redis_client = redis.Redis(host='localhost', port=6379, db=0,decode_responses=True) #redis client
 
-@router.get("/blog", status_code=status.HTTP_200_OK)
+
+import json
+import redis
+from fastapi import Query, HTTPException, status
+
+@router.get("/blogs", status_code=status.HTTP_200_OK)
 def select_blogs(
     limit: int = Query(default=10, ge=1), 
     offset: int = Query(default=0, ge=0)
 ):
+    cache_key = f"blogs:limit:{limit}:offset:{offset}"
+    
+    # 1.trying to get from Cache
     try:
-        
-        
+        cached_data = redis_client.get(cache_key)
+        if cached_data:
+            print("found from cache")
+            return json.loads(cached_data)
+    except redis.exceptions.ConnectionError:
+        print("Redis is down, skipping cache...")
+
+    # 2. database query (Cache Miss or Redis Down)
+    try:
         query = "SELECT * FROM Blogs ORDER BY blog_id ASC LIMIT %s OFFSET %s"
         cursor.execute(query, (limit, offset))
-        
         results = cursor.fetchall()
-        
-        return {
+
+        response_data = {
             "data": results,
             "metadata": {
                 "limit": limit,
@@ -53,14 +68,26 @@ def select_blogs(
                 "count": len(results)
             }
         }
+
+        # 3.  save to Cache
+        try:
+            # Use json.dumps() to serialize to string
+            redis_client.setex(
+                name=cache_key,
+                time=60,
+                value=json.dumps(response_data) 
+            )
+            print("saved to cache")
+        except redis.exceptions.ConnectionError:
+            pass 
+
+        return response_data
+
     except mysql.connector.Error as err:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
             detail=f"Database error: {err}"
         )
-    finally:
-        cursor.close()
-
 
 
 
@@ -77,17 +104,41 @@ def select_blogs(
 #         raise HTTPException(status_code=500, detail=f"Database connection error: {err}")
 
 
+"""get by id"""
 
 @router.get("/blogs/{blog_id}", status_code=status.HTTP_200_OK)
 def get_user_by_id(blog_id: int):
+    cache_key = f"blog:{blog_id}"
     
+    # 1. Try Cache
+    if redis_client:
+        try:
+            cached_data = redis_client.get(cache_key)
+            if cached_data:
+                return json.loads(cached_data)
+        except redis.RedisError:
+            pass
+
+    # 2. Database
     cursor.execute(select_by_id, (blog_id,))
     result = cursor.fetchone()
+    
     if result:
+        # 3. Cache the single item
+        if redis_client:
+            try:
+                redis_client.setex(cache_key, 600, json.dumps(result))
+            except redis.RedisError:
+                pass
         return result
     else:
         raise HTTPException(status_code=404, detail="blog not found")
-    
+
+
+
+
+
+
 
 
 
@@ -130,7 +181,7 @@ def insert_user(blog: Blogdb):
         mydb.rollback()
         if err.errno == 1062:
             raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST, 
+                status_code=status.HTTP_409_CONFLICT, 
                 detail=f"Blog with ID {blog.blog_id} already exists."
             )
         
